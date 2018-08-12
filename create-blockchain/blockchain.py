@@ -108,12 +108,12 @@ def is_valid():
     is_valid = blockchain.is_chain_valid(blockchain.chain)
     
     if is_valid:
-        response = {'message':'there is no problem with the blockchain'}
+        response = {'message': 'there is no problem with the blockchain'}
         
     else:
-        response = {'message':'there is a problem with blockchain'}
+        response = {'message': 'there is a problem with blockchain'}
         
-    return jsonify(response),200
+    return jsonify(response), 200
 
 
 # Running the app
