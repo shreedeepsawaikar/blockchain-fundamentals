@@ -152,10 +152,10 @@ def is_valid():
     is_valid = blockchain.is_chain_valid(blockchain.chain)
 
     if is_valid:
-        response = {'message': 'all is well'}
+        response = {'message': 'all is well ! there is no problem with chain'}
 
     else:
-        response = {'message': 'fucked up'}
+        response = {'message': 'there is a problem with chain'}
 
     return jsonify(response), 200
 
